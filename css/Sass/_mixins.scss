@@ -1,0 +1,21 @@
+@mixin center() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin headers {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  display: block;
+  text-transform: capitalize;
+  line-height: -20px;
+  margin: 50px;
+  text-align: center;
+  font-family: $mainfont;
+}
+@mixin flexCenter($dir) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: center;
+  align-items: center;
+}
